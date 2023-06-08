@@ -10,7 +10,7 @@ import { THEME } from './src/theme';
 import { Loading } from './src/components/Loading';
 
 import { CartContextProvider } from './src/contexts/CartContext';
-import { tagUserEmailCreate } from './src/notifications/notificationsTags';
+import { tagUserInfoCreate } from './src/notifications/notificationsTags';
 
 const oneSignalAppId = Platform.OS === 'ios' ? '' : `${process.env.ONESIGNAL_APP_ID}`;
 
@@ -23,7 +23,7 @@ OneSignal.promptForPushNotificationsWithUserResponse(response => {
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
 
-  tagUserEmailCreate('gbsantos@gmail.com');
+  tagUserInfoCreate();
 
   return (
     <NativeBaseProvider theme={THEME}>
