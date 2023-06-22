@@ -8,18 +8,28 @@
 </p>
 
 
-## 💻 Projeto
+## 💻 Project
 
 igniteshoesapp
 
+## Commands
+
+```Bash
+# List schemas
+npx uri-scheme list
+
+# Test deeplink in development environment 
+npx uri-scheme open com.gbsantos.igniteshoes://192.168.1.11:8081 --android
+```
+
 ## 📝 Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is under the MIT license. See the [LICENSE](LICENSE) for more information.
 
 ---
 
 <p align="center">
-  Feito com 💜 by Rocketseat
+  Made with 💜 by Rocketseat
 </p>
 
 
