@@ -40,7 +40,7 @@ export function AppRoutes() {
         component={Cart}
         options={{
           tabBarIcon: ({ color }) => <Feather name="shopping-bag" color={color} size={sizes[6]} />,
-          tabBarBadge: cart.length
+          tabBarBadge: cart.length > 0 ? cart.length : undefined
         }}
       />
 
